@@ -15,13 +15,14 @@ class Triangle(Polygon):
 
 class ProxyPolygon(Polygon):             #here we created a proxy class that is a subclass of main polygon class
 
-    def __init__(self):
-        self.triangle = Triangle()      #now here instead of instantiating directly, we instantiated the triangle class through proxy class
+    # def __init__(self):
+    #     self.triangle = Triangle()      #now here instead of instantiating directly, we instantiated the triangle class through proxy class
 
+    def __init__(self):
+        self.triangle = Triangle()
+        
     def noofsides(self):
         return self.triangle.noofsides()
     
 
 ProxyPolygon().noofsides()   #now here we will not know that the proxy class is just an object of triangle class
-
-
