@@ -22,4 +22,4 @@ class ProxyPolygon(Polygon):             #here we created a proxy class that is 
         return self.triangle.noofsides()
     
 
-ProxyPolygon().noofsides()
+ProxyPolygon().noofsides()   #now here we will not know that the proxy class 
