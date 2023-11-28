@@ -26,7 +26,7 @@ class PersonSingleton(Person):
     @staticmethod
     def get_instance(): #new instance of PersonSingleton with default values or returns the existing instance if it has already been created.
         if PersonSingleton.__instance == None: 
-            PersonSingleton("Default Name", 0)
+            PersonSingleton("Default Name", 0)  #If instance has not been created yet then this default instance is created with the name set to "Default Name" and age set to 0.
         return PersonSingleton.__instance
     
     def __init__(self, name, age):   
